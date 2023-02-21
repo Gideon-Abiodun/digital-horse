@@ -226,23 +226,48 @@
 
 .core-value {
   width: 100%;
-  margin: 6rem 0;
+  margin: 6rem 0 10rem;
 }
 
 .value,
-.our-value {
+.our-values {
   font-size: 40px;
   font-weight: 600;
   line-height: 60px;
   color: #4b99ff;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 8rem;
 }
 
 .rolling {
-  width: 548px;
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* .animated_image
+
+} */
+
+
+/* / ANIMATION / */
+@media (prefers-reduced-motion: no-preference) {
+  .animated_image {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+@keyframes App-logo-spin {
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg) 
+  }
+}
+
+
 
 /* Carousel One  */
 
@@ -338,14 +363,25 @@
   margin: 2rem 0;
 }
 
-.main-carousel .cells {
-  width: 50%;
-  /* height: 350px; */
-  /* margin: 2rem 2rem; */
+.main-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
+}
+.carousel-one {
+  width: 350px;
 }
 
-.carousel-one {
-  width: 340px;
-  /* height: 350px; */
-  object-fit: cover;
+.carousel-two {
+  width: 100px;
 }
+
+.carousel-three {
+  width: 154px;
+}
+
+.carousel-four {
+  width: 250px;
+}
+
